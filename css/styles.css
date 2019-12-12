@@ -8,4 +8,100 @@
 /* Main Styling */
 html, body {
   font-family: 'Roboto', sans-serif;
+  background-color: rgb(250, 250, 250);
+}
+
+/* Mobile */
+#main-nav {
+  display: block;
+  text-align: center;
+}
+
+#main-nav .container {
+  padding: 20px;
+}
+
+#main-nav h1 {
+  padding-bottom: 1rem;
+}
+
+#main-nav li {
+  list-style: none;
+  margin: 5px;
+  background-color: white;
+  padding: 10px;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* About Section */
+
+#about {
+  text-align: center;
+  margin: 2rem;
+}
+
+#about img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#about div {
+  padding-bottom: 2rem;
+}
+
+/* Portfolio Section */
+
+#portfolio {
+  background-color: white;
+  text-align: center;
+}
+
+#portfolio .title {
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+#portfolio img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#portfolio h3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#portfolio .container div {
+  /* border: 10px solid red; */
+  padding: 40px 50px;
+}
+
+/* Contact Section */
+
+#contact {
+  text-align: center;
+  padding: 2rem;
+}
+
+#contact h2 {
+  padding: 50px;
+}
+
+#contact p {
+  padding-bottom: 30px;
+}
+
+#contact div p span {
+  font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 320px) {
+
+
 }
