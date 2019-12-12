@@ -15,13 +15,13 @@
     <div class="container">
       <h1 class="logo">Student Name</h1>
       <ul>
-        <a href="#">
+        <a href="#about">
           <li>HOME</li>
         </a>
-        <a href="#">
+        <a href="#portfolio">
           <li>PORTFOLIO</li>
         </a>
-        <a href="#">
+        <a href="#contact">
           <li>CONTACT</li>
         </a>
       </ul>
@@ -29,45 +29,47 @@
   </nav>
 
   <header id="about">
-    <div class="profile_img">
-      <img src="images/responsive-layout-profile.png" alt="profile image">
+    <div class="container">
+      <div class="profile_img">
+        <img src="images/responsive-layout-profile.png" alt="profile image">
+      </div>
+      <div class="bio">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree
+        in front-end web development at Treehouse and am excited to put all my skills to use!</div>
     </div>
-    <div class="about">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree
-      in front-end web development at Treehouse and am excited to put all my skills to use!</div>
   </header>
 
   <section id="portfolio">
+    <h2 class="title">PORTFOLIO</h2>
     <div class="container">
-      <h2 class="title">PORTFOLIO</h2>
-      <div id="marketing">
+      <div class="item">
         <img src="images/portfolio-1.png" alt="marketing page">
         <h3>Marketing Page</h3>
         <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
       </div>
-      <div id="search">
+      <div class="item">
         <img src="images/portfolio-2.png" alt="search page">
         <h3>Search Page</h3>
         <p>This project searches through a specific database to find information that the user is trying to look up.</p>
       </div>
-      <div id="travel">
+      <div class="item">
         <img src="images/portfolio-3.png" alt="travel page">
         <h3>Travel App</h3>
         <p>This project compares travel times based on different transportation methods and tells you the best ones.</p>
       </div>
-      <div id="map">
+      <div class="item">
         <img src="images/portfolio-4.png" alt="map">
         <h3>Map of Favorite Spots</h3>
         <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking
           tour.</p>
       </div>
-      <div id="photo_gallery">
+      <div class="item">
         <img src="images/portfolio-5.png" alt="photo gallery">
         <h3>Photo Gallery</h3>
         <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through
           photos.
         </p>
       </div>
-      <div id="calculator">
+      <div class="item">
         <img src="images/portfolio-6.png" alt="calculator">
         <h3>Calculator</h3>
         <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
@@ -86,10 +88,23 @@
   </section>
 
   <footer id="footer">
-    <li>Student name</li>
-    <li>HOME</li>
-    <li>PORTFOLIO</li>
-    <li>CONTACT</li>
+    <div class="container">
+      <h4 class="footer_logo">Student name</h4>
+      <a href="#">
+        <h4 class="back_to_top">BACK TO TOP</h4>
+      </a>
+      <ul>
+        <a href="#about">
+          <li>HOME</li>
+        </a>
+        <a href="#portfolio">
+          <li>PORTFOLIO</li>
+        </a>
+        <a href="#contact">
+          <li>CONTACT</li>
+        </a>
+      </ul>
+    </div>
   </footer>
 </body>
 

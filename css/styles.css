@@ -11,6 +11,15 @@ html, body {
   background-color: rgb(250, 250, 250);
 }
 
+h2, h4 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
 /* Mobile */
 #main-nav {
   display: block;
@@ -51,6 +60,7 @@ html, body {
 
 #about div {
   padding-bottom: 2rem;
+  color: gray;
 }
 
 /* Portfolio Section */
@@ -75,8 +85,7 @@ html, body {
   padding-bottom: 30px;
 }
 
-#portfolio .container div {
-  /* border: 10px solid red; */
+#portfolio .item {
   padding: 40px 50px;
 }
 
@@ -99,9 +108,153 @@ html, body {
   font-weight: bold;
 }
 
+/* Footer */
+
+#footer {
+  margin: 1rem;
+  border-top: 1px solid lightgray;
+}
+
+#footer ul {
+  display: none;
+}
+
+#footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
 
 
-@media screen and (max-width: 320px) {
 
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+  /* Main Nav */
+  #main-nav ul {
+    display: inline-flex;
+    text-align: center;
+  }
+
+  #main-nav a li {
+    background-color: rgb(250, 250, 250);
+  }
+
+  /* About Section */
+  #about .container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  #about div {
+    height: 30vh;
+  }
+
+  #about .bio {
+    width: 60%;
+    color: gray;
+  }
+
+  #about .profile_img {
+    width: 50%;
+    height: 100%;
+  }
+
+  /* Portfolio Section */
+  #portfolio .container{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 15px;
+  }
+
+  #portfolio .item {
+    width: 50%;
+    padding: 40px 5px;
+  }
+
+  /* Footer */
+  #footer .back_to_top {
+    display: none;
+  }
+
+  #footer ul {
+    display: flex;
+    list-style: none;
+  }
+
+  #footer li {
+    padding: 0 15px;
+  }
+
+  #footer li:last-child {
+    padding-right: 0;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  /* Main Nav */
+  #main-nav .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+  }
+
+  #main-nav ul {
+    display: flex;
+  }
+
+  #main-nav a li {
+    background-color: rgb(250, 250, 250);
+  }
+
+  /* About Section */
+  #about .container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 300px;
+  }
+
+  #about .bio {
+    font-size: 20px;
+    width: 60%;
+    color: gray;
+  }
+
+  #about .profile_img {
+    width: 50%;
+    height: 100%;
+  }
+
+  /* Portfolio Section */
+  #portfolio .container{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 15px;
+  }
+
+  #portfolio .item {
+    width: 33%;
+    padding: 40px 5px;
+  }
+
+  /* Footer */
+  #footer .back_to_top {
+    display: none;
+  }
+
+  #footer ul {
+    display: flex;
+    list-style: none;
+  }
+
+  #footer li {
+    padding: 0 15px;
+  }
+
+  #footer li:last-child {
+    padding-right: 0;
+  }
 
 }
