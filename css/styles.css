@@ -20,10 +20,19 @@ a {
   color: #333;
 }
 
+.bg-light {
+  background-color: lightseagreen;
+}
+
+.bg-dark {
+  background-color: lightskyblue;
+}
+
 /* Mobile */
 #main-nav {
   display: block;
   text-align: center;
+  background-color: lightseagreen;
 }
 
 #main-nav .container {
@@ -32,6 +41,7 @@ a {
 
 #main-nav h1 {
   padding-bottom: 1rem;
+  color: white;
 }
 
 #main-nav li {
@@ -39,6 +49,7 @@ a {
   margin: 5px;
   background-color: white;
   padding: 10px;
+  color: gray;
 }
 
 #main-nav a {
@@ -89,6 +100,39 @@ a {
   padding: 40px 50px;
 }
 
+/* STATS */
+#stats h2 {
+  text-align: center;
+  padding: 40px 0;
+}
+
+#stats .container {
+  display: block;
+  text-align: center;
+  padding: 0;
+}
+
+#stats div {
+  padding: 50px;
+  width: 100%;
+}
+
+#stats i {
+  padding-bottom: 20px;
+  color: yellow;
+}
+
+#stats h3 {
+  padding-bottom: 20px;
+  color: white;
+}
+
+#stats p {
+  font-size: 3rem;
+  color: white;
+}
+
+
 /* Contact Section */
 
 #contact {
@@ -137,6 +181,7 @@ a {
 
   #main-nav a li {
     background-color: rgb(250, 250, 250);
+    color: gray;
   }
 
   /* About Section */
@@ -153,11 +198,11 @@ a {
   #about .bio {
     width: 60%;
     color: gray;
+    padding-top: 60px;
   }
 
   #about .profile_img {
     width: 50%;
-    height: 100%;
   }
 
   /* Portfolio Section */
@@ -171,6 +216,23 @@ a {
     width: 50%;
     padding: 40px 5px;
   }
+
+  /* STATS */
+  #stats .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #stats div {
+    padding: 50px;
+    width: 50%;
+  }
+
+  .flex-item:nth-of-type(1) { order: 1; }
+  .flex-item:nth-of-type(2) { order: 2; }
+  .flex-item:nth-of-type(3) { order: 4; }
+  .flex-item:nth-of-type(4) { order: 3; }
 
   /* Footer */
   #footer .back_to_top {
@@ -197,7 +259,11 @@ a {
   #main-nav .container {
     display: flex;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 1rem;
+  }
+
+  #main-nav .logo {
+    padding-top: 10px;
   }
 
   #main-nav ul {
@@ -220,6 +286,7 @@ a {
     font-size: 20px;
     width: 60%;
     color: gray;
+    padding-top: 60px;
   }
 
   #about .profile_img {
@@ -237,6 +304,24 @@ a {
   #portfolio .item {
     width: 33%;
     padding: 40px 5px;
+  }
+
+  /* STATS */
+
+  #stats .container {
+    display: flex;
+    width: 100%;
+  }
+
+  #stats div {
+    padding: 50px;
+    width: 50%;
+  }
+
+  /* Contact */
+
+  #contact .contact_desc {
+    margin: 0 200px;
   }
 
   /* Footer */
